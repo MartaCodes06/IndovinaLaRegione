@@ -93,12 +93,12 @@ path:hover {
     }
 
     #list div {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         grid-gap: 6px;
     }
 
     #region span {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     #title {
@@ -117,12 +117,12 @@ path:hover {
     }
 
     #list div {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
         grid-gap: 5px;
     }
 
     #region span {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     #title {
