@@ -1,0 +1,135 @@
+/* stile svg */
+svg {
+    width: 100%;
+    height: auto;
+}
+
+/* stile delle singole regioni svg */
+path {
+    fill: #00aeff;
+    stroke: #ffffff;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+path:hover {
+    fill: #1900ff;
+}
+
+/* stile mappa */
+#map-container {
+    width: 650px;
+    height: 750px;
+    display: flex;
+    justify-self: center;
+}
+
+/* stile regione selezionata */
+#map-container .selezionato path {
+    fill: #8f8f8f;
+}
+
+/* stile elenco regioni rimaste */
+#list div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 7px;
+    padding: 0px 3px;
+    justify-items: center;
+    background-color: #e0e0e0;
+}
+
+#region span {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 8px;
+}
+
+#region .sbarrato {
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Stile del pulsante di restart */
+#restart-btn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: darkblue;
+}
+
+/* stile titolo */
+#title {
+    font-size: 25px;
+    font-family: monospace;
+    margin: 1px 0px 5px 0px;
+    padding: 5px;
+    text-align: center;
+    background: blue;
+    color: #fff;
+}
+
+/* stile bottone restart */
+.button {
+    display: flex;
+    justify-content: right;
+}
+
+/* ----------------------------- */
+/*        MEDIA QUERIES         */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+    #map-container {
+        width: 500px;
+        height: 600px;
+    }
+
+    #list div {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 6px;
+    }
+
+    #region span {
+        font-size: 18px;
+    }
+
+    #title {
+        font-size: 22px;
+    }
+
+    #restart-btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #map-container {
+        width: 320px;
+        height: 420px;
+    }
+
+    #list div {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 5px;
+    }
+
+    #region span {
+        font-size: 16px;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #restart-btn {
+        font-size: 14px;
+    }
+}
