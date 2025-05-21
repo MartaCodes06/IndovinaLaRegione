@@ -95,7 +95,7 @@ path:hover {
 
     #list div {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        grid-gap: 6px;
+        grid-gap: 8px;
     }
 
     #region span {
@@ -119,7 +119,7 @@ path:hover {
 
     #list div {
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        grid-gap: 8px;
+        grid-gap: 10px;
     }
 
     #region span {
